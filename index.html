@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <title>Nagarro</title>
+  </head>
+  <body>
+    <div class="col-md-12" >
+        <div class="jumbotron jumbotron-fluid" style="background-color: aquamarine;color:white;text-align: center;">
+<h2>Student Enrollment Form</h2>
+</div>
+    </div>
+    <br><br><br>
+    <div class="container">
+    <div class="row">
+        <!-- Form section begins-->
+        <div class="col-md-6">
+            <form>
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                  </div>
+                <br>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <label for="website" class="col-sm-2 col-form-label">Website</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="website">
+                    </div>
+                  </div>
+                <br>
+                <div class="form-group row">
+                    <label for="image" class="col-sm-2 col-form-label">Image URL</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="image">
+                    </div>
+                  </div>
+                <br>
+                <fieldset class="form-group row">
+                  <legend class="col-form-label col-sm-2 float-sm-left pt-0">Gender</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
+                      <label class="form-check-label" for="gridRadios2">
+                        Female
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <br>
+                 <label class="form-check-label" >Skills</label>
+                 <div class="form-check form-check-inline" id="check">
+                    <input class="form-check-input" type="checkbox" name="Checkbox" value="Java">
+                    <label class="form-check-label" for="inlineCheckbox1">Java</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="Checkbox" value="HTML">
+                    <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="Checkbox" value="CSS">
+                    <label class="form-check-label" for="inlineCheckbox3">CSS</label>
+                  </div>
+                <br>
+                <br>
+                    <button type="button" onclick="showRecord()" class="btn btn-primary">Enroll Student</button>
+
+                    <button type="button" class="btn btn-danger">Clear</button>
+              </form>
+        </div>
+        <!-- Form section ends-->
+
+        <!-- Display section begins-->
+        <div class="col-md-6">
+            <h4 style="text-align: center;">Enrolled Students</h4>
+            <table class="table table-bordered" id="table">
+                <thead class="thead-light" id="th">
+                  <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Image</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+              </table>
+              
+        </div>
+        <!-- Display section begins-->
+    </div>
+    </div>
+    <div class="col-md-12" >
+        <div class="jumbotron jumbotron-fluid" style="background-color: aquamarine;color:white;text-align: center;">
+            <p>Copyright Ankur swami &copy;</p>
+</div>
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="Enrolment.js"></script>
+  </body>
+</html>
